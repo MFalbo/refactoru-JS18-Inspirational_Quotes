@@ -14,6 +14,11 @@ $(document).on('ready', function() {
 
 		return false;
 	})
+
+	$('.page-flip').click(function(){
+		$(this).closest('.quote-container').find(".personal-quotes").toggleClass('front-flip');
+		$(this).closest('.quote-container').find(".shared-quotes").toggleClass('back-flip');
+	});
   
 });
 

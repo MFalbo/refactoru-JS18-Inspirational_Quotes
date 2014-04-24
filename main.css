@@ -22,6 +22,10 @@ body{
 	float: left;
 }
 
+.quote-head{
+	display: inline-block;
+}
+
 /*Card-flip style transform*/
 .quote-container{
 	/*transform-style: preserve-3d;*/
@@ -51,12 +55,12 @@ body{
 
 }
 
-.quote-container:hover .personal-quotes{
+.front-flip{
 	-webkit-transform: rotateY(180deg);
 	
 }
 
-.quote-container:hover .shared-quotes{
+.back-flip{
 	-webkit-transform: rotateY(0deg);
 }
 /*end Card-flip style transform*/
