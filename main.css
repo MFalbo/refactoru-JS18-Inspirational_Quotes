@@ -15,11 +15,18 @@ body{
 	float: right;
 	border: 1px solid black;
 	width: 49%;
-	/*margin: 0 auto;*/
 }
 
 #user{
 	float: left;
+}
+
+#quote-form{
+	display: none;
+}
+
+#quote-area{
+	resize: none;
 }
 
 .quote-head{
@@ -28,14 +35,11 @@ body{
 
 /*Card-flip style transform*/
 .quote-container{
-	/*transform-style: preserve-3d;*/
 	position: relative;
-	height: 400px;
 	border-top: 1px solid #555;
 }
 
 .personal-quotes, .shared-quotes{
-	height: 400px;
 	width: 100%;
 }
 

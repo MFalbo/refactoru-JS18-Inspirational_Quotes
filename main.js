@@ -19,6 +19,10 @@ $(document).on('ready', function() {
 		$(this).closest('.quote-container').find(".personal-quotes").toggleClass('front-flip');
 		$(this).closest('.quote-container').find(".shared-quotes").toggleClass('back-flip');
 	});
+
+	$('#form-toggle').click(function(){
+		$(this).closest('.section').find('#quote-form').slideToggle();
+	});
   
 });
 
