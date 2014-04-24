@@ -1,0 +1,73 @@
+body{
+	background-image: url(notebook/notebook_@2X.png);
+
+}
+.container{
+	background-image: url(notebook/notebook.png);
+	width: 90%;
+	margin: 0 auto;
+	border: 2px solid red;
+	overflow: hidden;
+	padding: 5px;
+}
+
+.section{
+	float: right;
+	border: 1px solid black;
+	width: 49%;
+	/*margin: 0 auto;*/
+}
+
+#user{
+	float: left;
+}
+
+/*Card-flip style transform*/
+.quote-container{
+	/*transform-style: preserve-3d;*/
+	position: relative;
+	height: 400px;
+	border-top: 1px solid #555;
+}
+
+.personal-quotes, .shared-quotes{
+	height: 400px;
+	width: 100%;
+}
+
+.personal-quotes{
+	position: relative;
+	-webkit-backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+}
+
+.shared-quotes{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: -webkit-transform .5s linear 0s;
+	-webkit-transform: rotateY(-180deg);
+	-webkit-backface-visibility: hidden;
+
+}
+
+.quote-container:hover .personal-quotes{
+	-webkit-transform: rotateY(180deg);
+	
+}
+
+.quote-container:hover .shared-quotes{
+	-webkit-transform: rotateY(0deg);
+}
+/*end Card-flip style transform*/
+
+
+
+
+
+
+
+
+
+
+
