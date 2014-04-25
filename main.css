@@ -17,6 +17,11 @@ body{
 	width: 49%;
 }
 
+.avatar{
+	max-height: 250px;
+	max-width: 200px;
+}
+
 #user{
 	float: left;
 }
@@ -70,7 +75,9 @@ body{
 /*end Card-flip style transform*/
 
 
-
+.share{
+	display: block;
+}
 
 
 
