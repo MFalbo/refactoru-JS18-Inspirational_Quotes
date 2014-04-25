@@ -2,11 +2,14 @@ $(document).on('ready', function() {
 
 	$('#quote-form').on('submit', function(){
 		var quote = $(this).find('#quote-area').val();
-		// console.log($(this).find('#quote-area').val());
+		var author = $(this).find('#quote-author').val();
+		// console.log(author);
 		var quoteItem = $('<li></li>');
 		var quoteContent = $('<blockquote></blockquote>');
+		var quoteAuthor = $('<cite>');
 		quoteContent.text(quote);
-		quoteItem.append(quoteContent)
+		quoteAuthor.text(author);
+		quoteItem.append(quoteContent).append(quoteAuthor);
 		$(this).closest('.section').find('.quote-list').append(quoteItem);
 
 		$(this).find('#quote-area').val('');
