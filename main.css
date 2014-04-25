@@ -6,7 +6,7 @@ body{
 	background-image: url(notebook/notebook.png);
 	width: 90%;
 	margin: 0 auto;
-	border: 2px solid red;
+	/*border: 2px solid red;*/
 	overflow: hidden;
 	padding: 5px;
 }
@@ -32,6 +32,8 @@ body{
 
 #quote-area{
 	resize: none;
+	display: block;
+	margin-bottom: 5px;
 }
 
 .quote-head{
@@ -77,6 +79,12 @@ body{
 
 .share{
 	display: block;
+}
+
+#user-name, .friend-name{
+	vertical-align: top;
+	display: inline-block;
+	text-shadow: 2px 2px 2px #333;
 }
 
 
